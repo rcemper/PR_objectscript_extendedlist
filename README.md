@@ -45,3 +45,30 @@ Just import the classes to your caché/iris in your favourite way. It will be lo
 
 ## Additional
 Of course you can use the method and property wrapper classes of this project not only with the XList but in any case you could think of in which passing a method or a property-getter to another method would be helpful.
+
+## Docker_Demo
+ 
+### Prerequisites
+Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Docker desktop](https://www.docker.com/products/docker-desktop) installed.
+### Installation
+Clone/git pull the repo into any local directory
+```
+$ git clone https://github.com/rcemper/PR_objectscript_extendedlist.git
+.git
+```
+```
+$ docker compose up -d && docker compose logs -f
+```
+To open IRIS Terminal do:
+```
+$ docker-compose exec iris iris session iris
+USER>
+```
+or using **WebTerminal**
+```
+http://localhost:42773/terminal/
+```
+To access IRIS System Management Portal
+```
+http://localhost:42773/csp/sys/UtilHome.csp
+``` 
